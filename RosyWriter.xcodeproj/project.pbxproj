@@ -106,6 +106,7 @@
 		6FF11C9516A877B100E14D71 /* matrix.c in Sources */ = {isa = PBXBuildFile; fileRef = 6FF11C9116A877B100E14D71 /* matrix.c */; };
 		6FF11C9616A877B100E14D71 /* ShaderUtilities.c in Sources */ = {isa = PBXBuildFile; fileRef = 6FF11C9316A877B100E14D71 /* ShaderUtilities.c */; };
 		7214DBCE182AEF8900EA3F99 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7214DBCD182AEF8900EA3F99 /* Images.xcassets */; };
+		BAA4391D26EE255300F5348C /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAA4391C26EE255300F5348C /* opencv2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -158,6 +159,7 @@
 		6FF11C9316A877B100E14D71 /* ShaderUtilities.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; lineEnding = 0; name = ShaderUtilities.c; path = Utilities/GL/ShaderUtilities.c; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.c; };
 		6FF11C9416A877B100E14D71 /* ShaderUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = ShaderUtilities.h; path = Utilities/GL/ShaderUtilities.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		7214DBCD182AEF8900EA3F99 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Resources/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		BAA4391C26EE255300F5348C /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +212,7 @@
 				696D281C19CA539900A23D81 /* AVFoundation.framework in Frameworks */,
 				696D281D19CA539900A23D81 /* UIKit.framework in Frameworks */,
 				696D281E19CA539900A23D81 /* Foundation.framework in Frameworks */,
+				BAA4391D26EE255300F5348C /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +288,7 @@
 		6F90DDD81395CAAA00125BDA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BAA4391C26EE255300F5348C /* opencv2.framework */,
 				171999D919C7695800A719B5 /* CoreImage.framework */,
 				6F90DE001395CCBE00125BDA /* AssetsLibrary.framework */,
 				6F90DDFE1395CCB600125BDA /* AVFoundation.framework */,
@@ -443,16 +447,16 @@
 				LastUpgradeCheck = 0800;
 				TargetAttributes = {
 					1756C9D419BE5E1F0080DD55 = {
-            CreatedOnToolsVersion = 8.0;
+						CreatedOnToolsVersion = 8.0;
 					};
 					1FCCE64619BA80A5009D7A6B = {
-            CreatedOnToolsVersion = 8.0;
+						CreatedOnToolsVersion = 8.0;
 					};
 					696D280919CA539900A23D81 = {
-            CreatedOnToolsVersion = 8.0;
+						CreatedOnToolsVersion = 8.0;
 					};
 					6F90DDD41395CAAA00125BDA = {
-            CreatedOnToolsVersion = 8.0;
+						CreatedOnToolsVersion = 8.0;
 					};
 				};
 			};
@@ -461,6 +465,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 6F90DDCA1395CAAA00125BDA;
@@ -635,7 +640,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RosyWriter-Prefix.pch";
 				INFOPLIST_FILE = "RosyWriter-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DUSE_CIFILTER_RENDERER=1";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = RosyWriterCIFilter;
@@ -655,7 +659,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RosyWriter-Prefix.pch";
 				INFOPLIST_FILE = "RosyWriter-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DUSE_CIFILTER_RENDERER=1";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = RosyWriterCIFilter;
@@ -675,7 +678,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RosyWriter-Prefix.pch";
 				INFOPLIST_FILE = "RosyWriter-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DUSE_CPU_RENDERER=1";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = RosyWriterCPU;
@@ -695,7 +697,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RosyWriter-Prefix.pch";
 				INFOPLIST_FILE = "RosyWriter-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DUSE_CPU_RENDERER=1";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = RosyWriterCPU;
@@ -712,10 +713,13 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RosyWriter-Prefix.pch";
 				INFOPLIST_FILE = "RosyWriter-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DUSE_OPENCV_RENDERER=1";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = RosyWriterOpenCV;
@@ -732,10 +736,13 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RosyWriter-Prefix.pch";
 				INFOPLIST_FILE = "RosyWriter-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DUSE_OPENCV_RENDERER=1";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = RosyWriterOpenCV;
@@ -779,7 +786,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -816,7 +823,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -837,7 +844,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RosyWriter-Prefix.pch";
 				INFOPLIST_FILE = "RosyWriter-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DUSE_OPENGL_RENDERER=1";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = RosyWriterOpenGL;
@@ -857,7 +863,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RosyWriter-Prefix.pch";
 				INFOPLIST_FILE = "RosyWriter-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DUSE_OPENGL_RENDERER=1";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = RosyWriterOpenGL;
